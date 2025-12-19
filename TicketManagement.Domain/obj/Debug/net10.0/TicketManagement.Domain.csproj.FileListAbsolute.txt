@@ -1,0 +1,12 @@
+D:\TMS\Ticket_Management_System\TicketManagement.Domain\bin\Debug\net10.0\TicketManagement.Domain.deps.json
+D:\TMS\Ticket_Management_System\TicketManagement.Domain\bin\Debug\net10.0\TicketManagement.Domain.dll
+D:\TMS\Ticket_Management_System\TicketManagement.Domain\bin\Debug\net10.0\TicketManagement.Domain.pdb
+D:\TMS\Ticket_Management_System\TicketManagement.Domain\obj\Debug\net10.0\TicketManagement.Domain.csproj.AssemblyReference.cache
+D:\TMS\Ticket_Management_System\TicketManagement.Domain\obj\Debug\net10.0\TicketManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\TMS\Ticket_Management_System\TicketManagement.Domain\obj\Debug\net10.0\TicketManagement.Domain.AssemblyInfoInputs.cache
+D:\TMS\Ticket_Management_System\TicketManagement.Domain\obj\Debug\net10.0\TicketManagement.Domain.AssemblyInfo.cs
+D:\TMS\Ticket_Management_System\TicketManagement.Domain\obj\Debug\net10.0\TicketManagement.Domain.csproj.CoreCompileInputs.cache
+D:\TMS\Ticket_Management_System\TicketManagement.Domain\obj\Debug\net10.0\TicketManagement.Domain.dll
+D:\TMS\Ticket_Management_System\TicketManagement.Domain\obj\Debug\net10.0\refint\TicketManagement.Domain.dll
+D:\TMS\Ticket_Management_System\TicketManagement.Domain\obj\Debug\net10.0\TicketManagement.Domain.pdb
+D:\TMS\Ticket_Management_System\TicketManagement.Domain\obj\Debug\net10.0\ref\TicketManagement.Domain.dll
