@@ -4,6 +4,7 @@ using TicketManagement.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using TicketManagement.Application.Interfaces;
 using TicketManagement.Application.Services;
+using TicketManagement.Application.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,8 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectio
 //Add AuthService here which us used for user authentication
 builder.Services.AddScoped<IAuthService,AuthService>();
 
+// Add JwtTokenHelper
+builder.Services.AddScoped<JwtTokenHelper>();
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()

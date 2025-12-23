@@ -1,8 +1,24 @@
 [
   {
     "ContainingType": "TicketManagement.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/userLogin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "TicketManagement.Application.DTOs.Auth.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TicketManagement.API.Controllers.AuthController",
     "Method": "Register",
-    "RelativePath": "api/Auth/register",
+    "RelativePath": "api/Auth/userRegister",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

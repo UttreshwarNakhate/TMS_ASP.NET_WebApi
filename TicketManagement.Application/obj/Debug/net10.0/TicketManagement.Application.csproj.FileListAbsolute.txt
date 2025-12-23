@@ -13,3 +13,4 @@ D:\TMS\Ticket_Management_System\TicketManagement.Application\bin\Debug\net10.0\T
 D:\TMS\Ticket_Management_System\TicketManagement.Application\bin\Debug\net10.0\TicketManagement.Domain.pdb
 D:\TMS\Ticket_Management_System\TicketManagement.Application\obj\Debug\net10.0\TicketManagement.Application.csproj.AssemblyReference.cache
 D:\TMS\Ticket_Management_System\TicketManagement.Application\obj\Debug\net10.0\TicketMa.4D4129CD.Up2Date
+D:\TMS\Ticket_Management_System\TicketManagement.Application\obj\Debug\net10.0\TicketManagement.Application.sourcelink.json

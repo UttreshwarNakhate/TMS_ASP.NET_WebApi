@@ -18,7 +18,7 @@ namespace TicketManagement.API.Controllers
         }
 
 
-        [HttpPost("register")]
+        [HttpPost("userRegister")]
         public async Task<IActionResult> Register(RegisterDto registerDto)
         {
             if (!ModelState.IsValid) { 
@@ -28,6 +28,22 @@ namespace TicketManagement.API.Controllers
             var result = await _authService.RegisterAsync(registerDto);
 
             return StatusCode(result.StatusCode, result);
+        }
+
+        [HttpGet("userLogin")]
+        public async Task<IActionResult> Login(LoginDto loginDto)
+        {
+            //validate input
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            //Call service
+            var response = await _authService.LoginAsync(loginDto);
+
+            //return response
+            return StatusCode(response.StatusCode, response);
         }
     }
 }

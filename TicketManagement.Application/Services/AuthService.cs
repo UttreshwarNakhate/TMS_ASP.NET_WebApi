@@ -1,9 +1,12 @@
 ﻿
 
 using Microsoft.AspNetCore.Identity;
+using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
 using TicketManagement.Application.Constants;
 using TicketManagement.Application.DTOs.Auth;
 using TicketManagement.Application.DTOs.Common;
+using TicketManagement.Application.Helpers;
 using TicketManagement.Application.Interfaces;
 using TicketManagement.Domain.Entities;
 
@@ -12,16 +15,18 @@ namespace TicketManagement.Application.Services
       public class AuthService : IAuthService
     {
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly JwtTokenHelper _jwtTokenHelper;
 
         //create constructor
-        public AuthService(UserManager<ApplicationUser> userManager)
+        public AuthService(UserManager<ApplicationUser> userManager,  JwtTokenHelper jwtTokenHelper)
         {
             _userManager = userManager;
+            _jwtTokenHelper = jwtTokenHelper;
         }
 
 
         //Following method is used to register the user
-        public async Task<ApiResponseDto<Object>> RegisterAsync(RegisterDto registerDto)
+        public async Task<ApiResponseDto<object>> RegisterAsync(RegisterDto registerDto)
         {
 
             //1. Check if user is already exists
@@ -73,6 +78,55 @@ namespace TicketManagement.Application.Services
                 StatusType = ApiStatusConstants.SuccessType,
                 Details = new { user.Email }
             };
+
+
+        }
+   
+    
+        //Following method is used to login user
+        public async Task<ApiResponseDto<object>> LoginAsync(LoginDto loginDto)
+        {
+            //Find user by email id
+            var user = await _userManager.FindByEmailAsync(loginDto.Email);
+
+            //if user not exists
+            if (user == null)
+            {
+                return new ApiResponseDto<object>
+                {
+                    StatusCode = ApiStatusConstants.NotFoundCode,
+                    StatusDesc = ApiStatusConstants.WrongEmail,
+                    StatusType = ApiStatusConstants.ErrorType,
+                    Details = null
+                };
+            }
+
+            //Validate password
+            var isPassWordValid = await _userManager.CheckPasswordAsync(user, loginDto.Password);
+            if (!isPassWordValid)
+            {
+                return new ApiResponseDto<object>
+                {
+                    StatusCode = ApiStatusConstants.BadRequestCode,
+                    StatusDesc = ApiStatusConstants.WrongPassword,
+                    StatusType = ApiStatusConstants.ErrorType,
+                    Details = null
+                };
+            }
+
+            //Generate  token
+            var token = _jwtTokenHelper.GenerateToken(user);
+
+
+            //return success response
+            return new ApiResponseDto<object>
+            {
+                StatusCode = ApiStatusConstants.SuccessCode,
+                StatusDesc = ApiStatusConstants.LoginSuccess,
+                StatusType = ApiStatusConstants.SuccessType,
+                Details = user
+            };
+
         }
     }
 }
