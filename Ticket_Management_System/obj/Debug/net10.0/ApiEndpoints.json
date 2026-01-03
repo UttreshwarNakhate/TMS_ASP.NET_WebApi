@@ -30,5 +30,67 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TicketManagement.API.Controllers.DebugController",
+    "Method": "Test",
+    "RelativePath": "api/debug/test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TicketManagement.API.Controllers.DebugController",
+    "Method": "GetTokenInfo",
+    "RelativePath": "api/debug/token-info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TicketManagement.API.Controllers.DebugController",
+    "Method": "ValidateToken",
+    "RelativePath": "api/debug/validate-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TicketManagement.API.Controllers.TicketController",
+    "Method": "CreateTicket",
+    "RelativePath": "api/tickets",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TicketManagement.Application.DTOs.Ticket.CreateTicketDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TicketManagement.API.Controllers.TicketController",
+    "Method": "GetTickets",
+    "RelativePath": "api/tickets/my-tickets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

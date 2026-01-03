@@ -1,8 +1,7 @@
-﻿
-
+﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
-using System.Security.Cryptography;
-using System.Security.Cryptography.X509Certificates;
 using TicketManagement.Application.Constants;
 using TicketManagement.Application.DTOs.Auth;
 using TicketManagement.Application.DTOs.Common;
@@ -12,27 +11,23 @@ using TicketManagement.Domain.Entities;
 
 namespace TicketManagement.Application.Services
 {
-      public class AuthService : IAuthService
+    public class AuthService : IAuthService
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly JwtTokenHelper _jwtTokenHelper;
 
-        //create constructor
-        public AuthService(UserManager<ApplicationUser> userManager,  JwtTokenHelper jwtTokenHelper)
+        public AuthService(UserManager<ApplicationUser> userManager, JwtTokenHelper jwtTokenHelper)
         {
             _userManager = userManager;
             _jwtTokenHelper = jwtTokenHelper;
         }
 
-
-        //Following method is used to register the user
         public async Task<ApiResponseDto<object>> RegisterAsync(RegisterDto registerDto)
         {
-
-            //1. Check if user is already exists
             var existingUser = await _userManager.FindByEmailAsync(registerDto.Email);
-            if (existingUser != null) {
-                return new ApiResponseDto<Object>
+            if (existingUser != null)
+            {
+                return new ApiResponseDto<object>
                 {
                     StatusCode = ApiStatusConstants.BadRequestCode,
                     StatusDesc = ApiStatusConstants.UserAlreadyExists,
@@ -41,57 +36,41 @@ namespace TicketManagement.Application.Services
                 };
             }
 
-
             var user = new ApplicationUser
             {
-                // Using Email as UserName for login
                 UserName = registerDto.Email,
-                Email = registerDto.Email   
+                Email = registerDto.Email
             };
 
-
             var result = await _userManager.CreateAsync(user, registerDto.Password);
-            if(!result.Succeeded)
+            if (!result.Succeeded)
             {
-                var errorMessage = string.Join(",", result.Errors.Select(e => e.Description));
-                // 2️⃣ Handle Identity errors
-                if (!result.Succeeded)
+                return new ApiResponseDto<object>
                 {
-                    var errors = string.Join(", ",
-                        result.Errors.Select(e => e.Description));
-
-                    return new ApiResponseDto<Object>
-                    {
-                        StatusCode = ApiStatusConstants.BadRequestCode,
-                        StatusDesc = ApiStatusConstants.RegistrationFailed,
-                        StatusType = ApiStatusConstants.ErrorType,
-                        Details = result.Errors
-                    };
-                }
+                    StatusCode = ApiStatusConstants.BadRequestCode,
+                    StatusDesc = ApiStatusConstants.RegistrationFailed,
+                    StatusType = ApiStatusConstants.ErrorType,
+                    Details = result.Errors
+                };
             }
 
-            // 4. Success
-            return new ApiResponseDto<Object>
+            return new ApiResponseDto<object>
             {
                 StatusCode = ApiStatusConstants.SuccessCode,
                 StatusDesc = ApiStatusConstants.UserCreated,
                 StatusType = ApiStatusConstants.SuccessType,
-                Details = new { user.Email }
+                Details = new { result = result.Succeeded }
             };
-
-
         }
-   
-    
-        //Following method is used to login user
+
         public async Task<ApiResponseDto<object>> LoginAsync(LoginDto loginDto)
         {
-            //Find user by email id
-            var user = await _userManager.FindByEmailAsync(loginDto.Email);
+            Console.WriteLine($"\n🔐 LOGIN ATTEMPT: {loginDto.Email}");
 
-            //if user not exists
+            var user = await _userManager.FindByEmailAsync(loginDto.Email);
             if (user == null)
             {
+                Console.WriteLine($"❌ USER NOT FOUND: {loginDto.Email}");
                 return new ApiResponseDto<object>
                 {
                     StatusCode = ApiStatusConstants.NotFoundCode,
@@ -101,10 +80,12 @@ namespace TicketManagement.Application.Services
                 };
             }
 
-            //Validate password
-            var isPassWordValid = await _userManager.CheckPasswordAsync(user, loginDto.Password);
-            if (!isPassWordValid)
+            Console.WriteLine($"✓ USER FOUND: ID={user.Id}, Email={user.Email}");
+
+            var isPasswordValid = await _userManager.CheckPasswordAsync(user, loginDto.Password);
+            if (!isPasswordValid)
             {
+                Console.WriteLine($"❌ INVALID PASSWORD for {user.Email}");
                 return new ApiResponseDto<object>
                 {
                     StatusCode = ApiStatusConstants.BadRequestCode,
@@ -114,19 +95,19 @@ namespace TicketManagement.Application.Services
                 };
             }
 
-            //Generate  token
+            Console.WriteLine("✓ PASSWORD VALIDATED");
+
             var token = _jwtTokenHelper.GenerateToken(user);
 
+            Console.WriteLine($"✓ TOKEN GENERATED (length: {token?.Length ?? 0})");
 
-            //return success response
             return new ApiResponseDto<object>
             {
                 StatusCode = ApiStatusConstants.SuccessCode,
                 StatusDesc = ApiStatusConstants.LoginSuccess,
                 StatusType = ApiStatusConstants.SuccessType,
-                Details = user
+                Details = new { user.Id, user.Email, token }
             };
-
         }
     }
 }

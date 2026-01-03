@@ -36,8 +36,9 @@ namespace TicketManagement.Application.Helpers
 
             //Secret key from appsettings.json
             var key = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(_configuration["JwtSettings:key"]!)
-                );
+                Encoding.UTF8.GetBytes(_configuration["JwtSettings:Key"]!)
+            );
+
 
             //signing credentials (HMAC SHA256)
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);

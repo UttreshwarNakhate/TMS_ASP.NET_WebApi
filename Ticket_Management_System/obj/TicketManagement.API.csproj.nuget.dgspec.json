@@ -34,6 +34,9 @@
             "projectReferences": {
               "D:\\TMS\\Ticket_Management_System\\TicketManagement.Domain\\TicketManagement.Domain.csproj": {
                 "projectPath": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Domain\\TicketManagement.Domain.csproj"
+              },
+              "D:\\TMS\\Ticket_Management_System\\TicketManagement.Infrastructure\\TicketManagement.Infrastructure.csproj": {
+                "projectPath": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Infrastructure\\TicketManagement.Infrastructure.csproj"
               }
             }
           }
@@ -59,6 +62,10 @@
               "version": "[10.0.1, )"
             },
             "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.15.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[8.15.0, )"
             }
@@ -1130,6 +1137,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[10.0.1, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.15.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.15.0, )"
             }
           },
           "imports": [

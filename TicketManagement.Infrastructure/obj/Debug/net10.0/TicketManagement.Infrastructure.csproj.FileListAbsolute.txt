@@ -9,6 +9,7 @@ D:\TMS\Ticket_Management_System\TicketManagement.Infrastructure\obj\Debug\net10.
 D:\TMS\Ticket_Management_System\TicketManagement.Infrastructure\obj\Debug\net10.0\TicketManagement.Infrastructure.AssemblyInfoInputs.cache
 D:\TMS\Ticket_Management_System\TicketManagement.Infrastructure\obj\Debug\net10.0\TicketManagement.Infrastructure.AssemblyInfo.cs
 D:\TMS\Ticket_Management_System\TicketManagement.Infrastructure\obj\Debug\net10.0\TicketManagement.Infrastructure.csproj.CoreCompileInputs.cache
+D:\TMS\Ticket_Management_System\TicketManagement.Infrastructure\obj\Debug\net10.0\TicketManagement.Infrastructure.sourcelink.json
 D:\TMS\Ticket_Management_System\TicketManagement.Infrastructure\obj\Debug\net10.0\TicketMa.14C6C07D.Up2Date
 D:\TMS\Ticket_Management_System\TicketManagement.Infrastructure\obj\Debug\net10.0\TicketManagement.Infrastructure.dll
 D:\TMS\Ticket_Management_System\TicketManagement.Infrastructure\obj\Debug\net10.0\refint\TicketManagement.Infrastructure.dll
