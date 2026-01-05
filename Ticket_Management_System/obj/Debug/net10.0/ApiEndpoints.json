@@ -85,6 +85,43 @@
   },
   {
     "ContainingType": "TicketManagement.API.Controllers.TicketController",
+    "Method": "GetTicketDetails",
+    "RelativePath": "api/tickets/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TicketManagement.API.Controllers.TicketController",
+    "Method": "UpdateTicketStatus",
+    "RelativePath": "api/tickets/{id}/Status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "TicketManagement.Application.DTOs.Ticket.UpdateTicketStatusDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TicketManagement.API.Controllers.TicketController",
     "Method": "GetTickets",
     "RelativePath": "api/tickets/my-tickets",
     "HttpMethod": "GET",

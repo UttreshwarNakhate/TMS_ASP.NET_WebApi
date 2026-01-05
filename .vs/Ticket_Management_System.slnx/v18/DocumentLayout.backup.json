@@ -3,30 +3,6 @@
   "WorkspaceRootPath": "D:\\TMS\\Ticket_Management_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5C40B3B-CFD0-E49B-1ED2-17A836756C57}|Ticket_Management_System\\TicketManagement.API.csproj|d:\\tms\\ticket_management_system\\ticket_management_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5C40B3B-CFD0-E49B-1ED2-17A836756C57}|Ticket_Management_System\\TicketManagement.API.csproj|solutionrelative:ticket_management_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A18985E-733F-CC3E-31ED-2CE3BFCEA6B6}|TicketManagement.Application\\TicketManagement.Application.csproj|d:\\tms\\ticket_management_system\\ticketmanagement.application\\helpers\\tokendebughelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A18985E-733F-CC3E-31ED-2CE3BFCEA6B6}|TicketManagement.Application\\TicketManagement.Application.csproj|solutionrelative:ticketmanagement.application\\helpers\\tokendebughelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A18985E-733F-CC3E-31ED-2CE3BFCEA6B6}|TicketManagement.Application\\TicketManagement.Application.csproj|d:\\tms\\ticket_management_system\\ticketmanagement.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A18985E-733F-CC3E-31ED-2CE3BFCEA6B6}|TicketManagement.Application\\TicketManagement.Application.csproj|solutionrelative:ticketmanagement.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5C40B3B-CFD0-E49B-1ED2-17A836756C57}|Ticket_Management_System\\TicketManagement.API.csproj|d:\\tms\\ticket_management_system\\ticket_management_system\\ticketmanagement.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{B5C40B3B-CFD0-E49B-1ED2-17A836756C57}|Ticket_Management_System\\TicketManagement.API.csproj|solutionrelative:ticket_management_system\\ticketmanagement.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5C40B3B-CFD0-E49B-1ED2-17A836756C57}|Ticket_Management_System\\TicketManagement.API.csproj|d:\\tms\\ticket_management_system\\ticket_management_system\\middleware\\authdebugmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5C40B3B-CFD0-E49B-1ED2-17A836756C57}|Ticket_Management_System\\TicketManagement.API.csproj|solutionrelative:ticket_management_system\\middleware\\authdebugmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5C40B3B-CFD0-E49B-1ED2-17A836756C57}|Ticket_Management_System\\TicketManagement.API.csproj|d:\\tms\\ticket_management_system\\ticket_management_system\\controllers\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5C40B3B-CFD0-E49B-1ED2-17A836756C57}|Ticket_Management_System\\TicketManagement.API.csproj|solutionrelative:ticket_management_system\\controllers\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B5C40B3B-CFD0-E49B-1ED2-17A836756C57}|Ticket_Management_System\\TicketManagement.API.csproj|d:\\tms\\ticket_management_system\\ticket_management_system\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5C40B3B-CFD0-E49B-1ED2-17A836756C57}|Ticket_Management_System\\TicketManagement.API.csproj|solutionrelative:ticket_management_system\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,8 +11,16 @@
       "RelativeMoniker": "D:0:0:{7A18985E-733F-CC3E-31ED-2CE3BFCEA6B6}|TicketManagement.Application\\TicketManagement.Application.csproj|solutionrelative:ticketmanagement.application\\services\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A18985E-733F-CC3E-31ED-2CE3BFCEA6B6}|TicketManagement.Application\\TicketManagement.Application.csproj|d:\\tms\\ticket_management_system\\ticketmanagement.application\\dtos\\ticket\\getticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A18985E-733F-CC3E-31ED-2CE3BFCEA6B6}|TicketManagement.Application\\TicketManagement.Application.csproj|solutionrelative:ticketmanagement.application\\dtos\\ticket\\getticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A18985E-733F-CC3E-31ED-2CE3BFCEA6B6}|TicketManagement.Application\\TicketManagement.Application.csproj|d:\\tms\\ticket_management_system\\ticketmanagement.application\\constants\\apistatusconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A18985E-733F-CC3E-31ED-2CE3BFCEA6B6}|TicketManagement.Application\\TicketManagement.Application.csproj|solutionrelative:ticketmanagement.application\\constants\\apistatusconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A18985E-733F-CC3E-31ED-2CE3BFCEA6B6}|TicketManagement.Application\\TicketManagement.Application.csproj|d:\\tms\\ticket_management_system\\ticketmanagement.application\\interfaces\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A18985E-733F-CC3E-31ED-2CE3BFCEA6B6}|TicketManagement.Application\\TicketManagement.Application.csproj|solutionrelative:ticketmanagement.application\\interfaces\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A18985E-733F-CC3E-31ED-2CE3BFCEA6B6}|TicketManagement.Application\\TicketManagement.Application.csproj|d:\\tms\\ticket_management_system\\ticketmanagement.application\\dtos\\ticket\\updateticketstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A18985E-733F-CC3E-31ED-2CE3BFCEA6B6}|TicketManagement.Application\\TicketManagement.Application.csproj|solutionrelative:ticketmanagement.application\\dtos\\ticket\\updateticketstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,113 +35,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\TMS\\Ticket_Management_System\\Ticket_Management_System\\Program.cs",
-              "RelativeDocumentMoniker": "Ticket_Management_System\\Program.cs",
-              "ToolTip": "D:\\TMS\\Ticket_Management_System\\Ticket_Management_System\\Program.cs",
-              "RelativeToolTip": "Ticket_Management_System\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T13:00:57.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TokenDebugHelper.cs",
-              "DocumentMoniker": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\Helpers\\TokenDebugHelper.cs",
-              "RelativeDocumentMoniker": "TicketManagement.Application\\Helpers\\TokenDebugHelper.cs",
-              "ToolTip": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\Helpers\\TokenDebugHelper.cs",
-              "RelativeToolTip": "TicketManagement.Application\\Helpers\\TokenDebugHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T13:06:19.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "TicketManagement.Application\\Services\\AuthService.cs",
-              "ToolTip": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\Services\\AuthService.cs",
-              "RelativeToolTip": "TicketManagement.Application\\Services\\AuthService.cs",
-              "ViewState": "AgIAACwAAAAAopmZmZkLwDUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T13:06:30.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TicketManagement.API.csproj",
-              "DocumentMoniker": "D:\\TMS\\Ticket_Management_System\\Ticket_Management_System\\TicketManagement.API.csproj",
-              "RelativeDocumentMoniker": "Ticket_Management_System\\TicketManagement.API.csproj",
-              "ToolTip": "D:\\TMS\\Ticket_Management_System\\Ticket_Management_System\\TicketManagement.API.csproj",
-              "RelativeToolTip": "Ticket_Management_System\\TicketManagement.API.csproj",
-              "ViewState": "AgIAABQAAAAAAAAAAAArwBsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-03T13:54:14.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthDebugMiddleware.cs",
-              "DocumentMoniker": "D:\\TMS\\Ticket_Management_System\\Ticket_Management_System\\Middleware\\AuthDebugMiddleware.cs",
-              "RelativeDocumentMoniker": "Ticket_Management_System\\Middleware\\AuthDebugMiddleware.cs",
-              "ToolTip": "D:\\TMS\\Ticket_Management_System\\Ticket_Management_System\\Middleware\\AuthDebugMiddleware.cs",
-              "RelativeToolTip": "Ticket_Management_System\\Middleware\\AuthDebugMiddleware.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAuwDkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T13:36:13.157Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DebugController.cs",
-              "DocumentMoniker": "D:\\TMS\\Ticket_Management_System\\Ticket_Management_System\\Controllers\\DebugController.cs",
-              "RelativeDocumentMoniker": "Ticket_Management_System\\Controllers\\DebugController.cs",
-              "ToolTip": "D:\\TMS\\Ticket_Management_System\\Ticket_Management_System\\Controllers\\DebugController.cs",
-              "RelativeToolTip": "Ticket_Management_System\\Controllers\\DebugController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAHyfwHwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T13:07:01.148Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "TicketController.cs",
               "DocumentMoniker": "D:\\TMS\\Ticket_Management_System\\Ticket_Management_System\\Controllers\\TicketController.cs",
               "RelativeDocumentMoniker": "Ticket_Management_System\\Controllers\\TicketController.cs",
               "ToolTip": "D:\\TMS\\Ticket_Management_System\\Ticket_Management_System\\Controllers\\TicketController.cs",
               "RelativeToolTip": "Ticket_Management_System\\Controllers\\TicketController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAApwGIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHwAAAAAmJmZmZkcwI8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T12:10:47.658Z"
+              "WhenOpened": "2026-01-05T06:28:38.983Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "ApiStatusConstants.cs",
+              "DocumentMoniker": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\Constants\\ApiStatusConstants.cs",
+              "RelativeDocumentMoniker": "TicketManagement.Application\\Constants\\ApiStatusConstants.cs",
+              "ToolTip": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\Constants\\ApiStatusConstants.cs",
+              "RelativeToolTip": "TicketManagement.Application\\Constants\\ApiStatusConstants.cs",
+              "ViewState": "AgIAAAQAAAAAzczMzMwrwBkAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T06:18:55.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TicketService.cs",
               "DocumentMoniker": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\Services\\TicketService.cs",
               "RelativeDocumentMoniker": "TicketManagement.Application\\Services\\TicketService.cs",
               "ToolTip": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\Services\\TicketService.cs",
               "RelativeToolTip": "TicketManagement.Application\\Services\\TicketService.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAADgvz8AAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAkwLMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T11:58:13.559Z"
+              "WhenOpened": "2026-01-05T06:10:59.861Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetTicketDto.cs",
-              "DocumentMoniker": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\DTOs\\Ticket\\GetTicketDto.cs",
-              "RelativeDocumentMoniker": "TicketManagement.Application\\DTOs\\Ticket\\GetTicketDto.cs",
-              "ToolTip": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\DTOs\\Ticket\\GetTicketDto.cs",
-              "RelativeToolTip": "TicketManagement.Application\\DTOs\\Ticket\\GetTicketDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ITicketService.cs",
+              "DocumentMoniker": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\Interfaces\\ITicketService.cs",
+              "RelativeDocumentMoniker": "TicketManagement.Application\\Interfaces\\ITicketService.cs",
+              "ToolTip": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\Interfaces\\ITicketService.cs",
+              "RelativeToolTip": "TicketManagement.Application\\Interfaces\\ITicketService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwBUAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T11:45:48.725Z"
+              "WhenOpened": "2026-01-05T06:07:05.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateTicketStatusDto.cs",
+              "DocumentMoniker": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\DTOs\\Ticket\\UpdateTicketStatusDto.cs",
+              "RelativeDocumentMoniker": "TicketManagement.Application\\DTOs\\Ticket\\UpdateTicketStatusDto.cs",
+              "ToolTip": "D:\\TMS\\Ticket_Management_System\\TicketManagement.Application\\DTOs\\Ticket\\UpdateTicketStatusDto.cs",
+              "RelativeToolTip": "TicketManagement.Application\\DTOs\\Ticket\\UpdateTicketStatusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T05:56:05.768Z",
+              "EditorCaption": ""
             }
           ]
         }

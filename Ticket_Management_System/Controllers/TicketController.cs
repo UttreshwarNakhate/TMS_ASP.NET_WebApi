@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using TicketManagement.Application.DTOs.Ticket;
@@ -77,7 +76,6 @@ namespace TicketManagement.API.Controllers
         }
 
 
-
         //Get api to fetch all tickets for logged-in user
         [HttpGet("my-tickets")]
         public async Task<IActionResult> GetTickets()
@@ -101,6 +99,48 @@ namespace TicketManagement.API.Controllers
             var response = await _ticketService.GetAllTicketsAsync(userId);
 
             //Return standard response
+            return StatusCode(response.StatusCode, response);
+        }
+
+
+        //Get api to fetch ticket details by ticket id
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetTicketDetails(int id)
+        {
+            // Get logged-in userId from JWT
+            var userId = GetUserId();
+
+            //Check if userId is null
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized(new { error = "UserId claim not found in token" });
+            }
+
+            //Call the service
+            var response = await _ticketService.GetTicketDetailsByIdAsync(id, userId);
+
+
+            //Return standard response
+            return StatusCode(response.StatusCode, response);
+        }
+
+
+        [HttpPut("{id}/Status")]
+        public async Task<IActionResult> UpdateTicketStatus(int id, UpdateTicketStatusDto dto)
+        {
+            // Get logged-in userId from JWT
+            var userId = GetUserId();
+
+            //Check if userId is null
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized(new { error = "UserId claim not found in token" });
+            }
+
+            //Call service
+            var response = await _ticketService.UpdateTicketStatusAsync(id, userId, dto);
+
+            //return response
             return StatusCode(response.StatusCode, response);
         }
     }

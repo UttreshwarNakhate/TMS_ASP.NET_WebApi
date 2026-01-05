@@ -20,5 +20,8 @@
 
         public const string TicketCreated = "Ticket created successfully";
         public const string TicketsFetched = "Tickets fetched successfully";
-    }
+        public const string TicketsNotFound = "Ticket not found";
+        public const string TicketDetailsFetched = "Ticket details fetched successfully";
+        public const string StatusAlreadyExists = "Ticket already in this status ";
+        public const string StatusUpdate = "Ticket status updated successfully";    }
 }
