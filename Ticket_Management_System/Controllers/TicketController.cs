@@ -125,6 +125,8 @@ namespace TicketManagement.API.Controllers
         }
 
 
+
+        //Method to update the ticket
         [HttpPut("{id}/Status")]
         public async Task<IActionResult> UpdateTicketStatus(int id, UpdateTicketStatusDto dto)
         {

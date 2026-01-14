@@ -124,6 +124,8 @@ app.UseRouting();
 
 // ✅ CRITICAL ORDER: CORS → Authentication → Authorization
 app.UseCors("AllowAll");
+// Register custom exception middleware
+app.UseMiddleware<ExceptionMiddleware>();
 app.UseAuthentication();    
 app.UseAuthorization();
 

@@ -10,5 +10,11 @@ namespace TicketManagement.Application.Interfaces
 
         //Login method contract
         Task<ApiResponseDto<Object>> LoginAsync(LoginDto loginDto);
+
+        //Logout endpoint
+        Task<ApiResponseDto<Object>> LogoutAsync(string userId);
+
+        //Refresh token
+        Task<ApiResponseDto<object>> RefreshTokenAsync(RefreshTokenDto dto)
     }
 }

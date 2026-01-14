@@ -2,10 +2,11 @@
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Claims;
+using System.Security.Cryptography;
+using System.Text;
 using System.Text;
 using TicketManagement.Domain.Entities;
-using System.Security.Claims;
-using System.Text;
 
 
 namespace TicketManagement.Application.Helpers
@@ -57,5 +58,22 @@ namespace TicketManagement.Application.Helpers
             // Convert token object to string
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
+
+        public string GenerateAccessToken(ApplicationUser user)
+        {
+            // (Already implemented earlier – short lifespan)
+            return GenerateToken(user);
+        }
+
+        public string GenerateRefreshToken()
+        {
+            // Secure random token
+            var randomBytes = RandomNumberGenerator.GetBytes(64);
+            return Convert.ToBase64String(randomBytes);
+        }
     }
+
+
+
 }

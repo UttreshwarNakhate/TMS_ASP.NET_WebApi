@@ -9,7 +9,9 @@
             public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
             public DbSet<Ticket> Tickets { get; set; }
-        }                   
+            public DbSet<RefreshToken> RefreshTokens { get; set; }
+
     }
+}
 
     //👉 This connects Identity + Tickets in one DB.

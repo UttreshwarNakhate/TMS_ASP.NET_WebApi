@@ -1,7 +1,10 @@
 ﻿using Azure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using TicketManagement.Application.DTOs.Auth;
 using TicketManagement.Application.Interfaces;
+using TicketManagement.Application.Services;
 
 namespace TicketManagement.API.Controllers
 {
@@ -45,5 +48,33 @@ namespace TicketManagement.API.Controllers
             //return response
             return StatusCode(response.StatusCode, response);
         }
+
+     
+    //Method to logout the user
+    [HttpPost("logout")]
+    public async Task<IActionResult> Logout()
+    {
+        // Get logged-in userId from JWT
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+        if (string.IsNullOrEmpty(userId))
+            return Unauthorized();
+
+        // Call service
+        var response = await _authService.LogoutAsync(userId);
+
+        // Return standard response
+        return StatusCode(response.StatusCode, response);
+    }
+
+        //Method for refresh token
+        [HttpPost("refresh-token")]
+        public async Task<IActionResult> RefreshToken(RefreshTokenDto dto)
+        {
+            var response = await _authService.RefreshTokenAsync(dto);
+            return StatusCode(response.StatusCode, response);
+        }
+
+
     }
 }
